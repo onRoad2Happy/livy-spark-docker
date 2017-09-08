@@ -14,8 +14,7 @@ pip install -r /bin/livy_python_requirements.txt
 # Get livy:
 git clone https://github.com/cloudera/livy.git
 cd livy
-JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m" /apache-maven-3.2.1/bin/mvn -DskipTests clean package
+JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=256m" /apache-maven-3.2.1/bin/mvn -DskipTests clean package
 
 # Setup livy logging directory
-mkdir -p /livy/logs
-echo "Livy Compiled successfully";
+mkdir -p /livy/logs;

@@ -40,6 +40,7 @@ COPY bin/* /bin/
 
 # Setup Livy
 RUN chmod +x /bin/setup_livy.sh; /bin/setup_livy.sh;
+COPY conf/livy.conf /livy/conf/
 
 # Workaround for mysql
 RUN echo "skip-grant-tables" | tee -a /etc/my.cnf && service mysql restart; exit 0;

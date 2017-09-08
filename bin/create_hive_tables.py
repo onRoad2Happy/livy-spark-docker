@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
     print '=== Creating Table ==='
     hive_context.sql("CREATE TABLE ALCOHOL_CONSUMPTION_BY_COUNTRY_2010 "
-                     "(LOCATION STRING, ALCOHOL FLOAT) ROW FORMAT "
+                     "(LOCATION STRING, ALCOHOL DOUBLE) ROW FORMAT "
                      "DELIMITED FIELDS TERMINATED BY ',' "
                      "TBLPROPERTIES (\"skip.header.line.count\"=\"1\")")
     print "=== loading data into table ==="
