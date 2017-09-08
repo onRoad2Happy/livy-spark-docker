@@ -18,3 +18,4 @@ JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=12
 
 # Setup livy logging directory
 mkdir -p /livy/logs
+echo "Livy Compiled successfully";
